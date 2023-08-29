@@ -52,5 +52,10 @@ plt.show()
 #TEST MODEL
 y_pred = model.predict(X_test)
 
+# CALCULATE METRICS
+mae = mean_absolute_error(y_test, y_pred)
+mse = mean_squared_error(y_test, y_pred)
+rmse = sqrt(mse)
+
 
 
